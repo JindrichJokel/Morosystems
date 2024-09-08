@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","4612","should open Google, search for MoroSystems, click the link, navigate to Kariéra page, and check for main element","","Sun Sep 08 22:43:30 CEST 2024","passed","Sun Sep 08 22:43:34 CEST 2024","","Google Search for MoroSystems and Kariéra Page Test","",""
+"","14662","should open Google and search for MoroSystems","","Sun Sep 08 22:00:25 CEST 2024","broken","Sun Sep 08 22:00:40 CEST 2024","","Google Search for MoroSystems","",""
+"","4028","should open Google, search for MoroSystems, click the link, navigate to Kariéra page, and check for main element","","Sun Sep 08 22:43:28 CEST 2024","passed","Sun Sep 08 22:43:32 CEST 2024","","Google Search for MoroSystems and Kariéra Page Test","",""
+"","14032","should open Google and search for MoroSystems","","Sun Sep 08 22:00:24 CEST 2024","broken","Sun Sep 08 22:00:38 CEST 2024","","Google Search for MoroSystems","",""

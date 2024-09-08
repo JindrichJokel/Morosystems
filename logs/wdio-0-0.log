@@ -1,0 +1,171 @@
+2024-09-08T20:43:26.911Z INFO @wdio/local-runner: Run worker command: run
+2024-09-08T20:43:27.665Z INFO webdriver: Initiate new session using the WebDriver protocol
+2024-09-08T20:43:27.665Z INFO @wdio/utils: Connecting to existing driver at http://localhost:9515/
+2024-09-08T20:43:27.671Z INFO webdriver: [POST] http://localhost:9515/session
+2024-09-08T20:43:27.671Z INFO webdriver: DATA {
+  capabilities: {
+    alwaysMatch: {
+      browserName: 'chrome',
+      acceptInsecureCerts: true,
+      webSocketUrl: true
+    },
+    firstMatch: [ {} ]
+  },
+  desiredCapabilities: {
+    browserName: 'chrome',
+    acceptInsecureCerts: true,
+    webSocketUrl: true
+  }
+}
+2024-09-08T20:43:28.264Z INFO webdriver: Register BiDi handler for session with id 895d974542f14e0d123f308809d6740c
+2024-09-08T20:43:28.264Z INFO webdriver: Connect to webSocketUrl ws://127.0.0.1:9515/session/895d974542f14e0d123f308809d6740c
+2024-09-08T20:43:28.270Z INFO webdriver: Connected session to Bidi protocol
+2024-09-08T20:43:28.270Z INFO webdriver: Connected session to Bidi protocol
+2024-09-08T20:43:28.270Z INFO webdriver: Connected to WebDriver Bidi interface at ws://127.0.0.1:9515/session/895d974542f14e0d123f308809d6740c
+2024-09-08T20:43:28.271Z INFO webdriver: BIDI COMMAND session.subscribe {"events":["browsingContext.navigationStarted"]}
+2024-09-08T20:43:28.272Z INFO webdriver: COMMAND getWindowHandle()
+2024-09-08T20:43:28.272Z INFO webdriver: BIDI COMMAND session.subscribe {"events":["log.entryAdded"]}
+2024-09-08T20:43:28.272Z INFO webdriver: BIDI COMMAND script.addPreloadScript { functionDeclaration: <PreloadScript[1265 bytes]>, contexts: undefined }
+2024-09-08T20:43:28.272Z INFO webdriver: BIDI COMMAND session.subscribe {"events":["browsingContext.navigationStarted","network.responseCompleted","network.beforeRequestSent","network.fetchError"]}
+2024-09-08T20:43:28.272Z INFO webdriver: BIDI COMMAND session.subscribe {"events":["browsingContext.userPromptOpened"]}
+2024-09-08T20:43:28.272Z INFO webdriver: [GET] http://localhost:9515/session/895d974542f14e0d123f308809d6740c/window
+2024-09-08T20:43:28.273Z INFO webdriver: COMMAND getWindowHandle()
+2024-09-08T20:43:28.273Z INFO webdriver: [GET] http://localhost:9515/session/895d974542f14e0d123f308809d6740c/window
+2024-09-08T20:43:28.276Z INFO webdriver: RESULT 2EA9FAC23CCADF8BC79EC0EFEFF07922
+2024-09-08T20:43:28.276Z INFO webdriver: BIDI COMMAND script.callFunction {"functionDeclaration":"<Function[374 bytes]>","awaitPromise":true,"arguments":[],"target":{"context":"2EA9FAC23CCADF8BC79EC0EFEFF07922"}}
+2024-09-08T20:43:28.277Z INFO webdriver: RESULT 2EA9FAC23CCADF8BC79EC0EFEFF07922
+2024-09-08T20:43:28.278Z INFO webdriver: BIDI COMMAND script.addPreloadScript { functionDeclaration: <PreloadScript[343 bytes]>, contexts: ["2EA9FAC23CCADF8BC79EC0EFEFF07922"] }
+2024-09-08T20:43:28.282Z INFO webdriver: BIDI COMMAND session.subscribe {"events":["script.message"]}
+2024-09-08T20:43:28.283Z INFO webdriverio:PolyfillManager: polyfill script added
+2024-09-08T20:43:28.288Z ERROR @wdio/utils:shim: Error: Cannot find module 'ts-node'
+Require stack:
+- C:\Users\jindr\OneDrive\Dokumenty\morosystems\wdio.conf.ts
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1048:15)
+    at m._resolveFilename (file:///C:/Users/jindr/OneDrive/Dokumenty/morosystems/node_modules/tsx/dist/register-BArwRho-.mjs:1:789)
+    at nextResolveSimple (C:\Users\jindr\OneDrive\Dokumenty\morosystems\node_modules\tsx\dist\register-C1urN2EO.cjs:3:942)
+    at C:\Users\jindr\OneDrive\Dokumenty\morosystems\node_modules\tsx\dist\register-C1urN2EO.cjs:2:2486
+    at C:\Users\jindr\OneDrive\Dokumenty\morosystems\node_modules\tsx\dist\register-C1urN2EO.cjs:2:1560
+    at resolveTsPaths (C:\Users\jindr\OneDrive\Dokumenty\morosystems\node_modules\tsx\dist\register-C1urN2EO.cjs:3:760)
+    at Function._resolveFilename (C:\Users\jindr\OneDrive\Dokumenty\morosystems\node_modules\tsx\dist\register-C1urN2EO.cjs:3:1035)
+    at Module._load (node:internal/modules/cjs/loader:901:27)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+2024-09-08T20:43:28.300Z INFO webdriver: COMMAND getUrl()
+2024-09-08T20:43:28.300Z INFO webdriver: [GET] http://localhost:9515/session/895d974542f14e0d123f308809d6740c/url
+2024-09-08T20:43:28.305Z INFO webdriver: RESULT about:blank
+2024-09-08T20:43:28.322Z INFO webdriver: BIDI COMMAND browsingContext.navigate {"context":"2EA9FAC23CCADF8BC79EC0EFEFF07922","url":"https://www.google.com/","wait":"complete"}
+2024-09-08T20:43:28.325Z INFO webdriver: COMMAND getWindowHandle()
+2024-09-08T20:43:28.325Z INFO webdriver: [GET] http://localhost:9515/session/895d974542f14e0d123f308809d6740c/window
+2024-09-08T20:43:28.328Z INFO webdriver: RESULT 2EA9FAC23CCADF8BC79EC0EFEFF07922
+2024-09-08T20:43:28.328Z INFO webdriverio:ContextManager: Update current context: 2EA9FAC23CCADF8BC79EC0EFEFF07922
+2024-09-08T20:43:28.703Z INFO webdriver: BIDI COMMAND browsingContext.locateNodes {"locator":{"type":"css","value":"#L2AGLb"},"context":"2EA9FAC23CCADF8BC79EC0EFEFF07922"}
+2024-09-08T20:43:28.710Z INFO webdriver: BIDI COMMAND script.callFunction {"functionDeclaration":"<Function[5465 bytes]>","awaitPromise":true,"arguments":[{"sharedId":"f.2EA9FAC23CCADF8BC79EC0EFEFF07922.d.862E5B87B4F7BE500C86A6AAAA971615.e.34"}],"target":{"context":"2EA9FAC23CCADF8BC79EC0EFEFF07922"}}
+2024-09-08T20:43:28.717Z INFO webdriver: COMMAND elementClick("f.2EA9FAC23CCADF8BC79EC0EFEFF07922.d.862E5B87B4F7BE500C86A6AAAA971615.e.34")
+2024-09-08T20:43:28.717Z INFO webdriver: [POST] http://localhost:9515/session/895d974542f14e0d123f308809d6740c/element/f.2EA9FAC23CCADF8BC79EC0EFEFF07922.d.862E5B87B4F7BE500C86A6AAAA971615.e.34/click
+2024-09-08T20:43:28.743Z INFO webdriver: RESULT null
+2024-09-08T20:43:28.746Z INFO webdriver: BIDI COMMAND browsingContext.locateNodes {"locator":{"type":"css","value":"textarea[id=\"APjFqb\"]"},"context":"2EA9FAC23CCADF8BC79EC0EFEFF07922"}
+2024-09-08T20:43:28.750Z INFO webdriver: COMMAND elementClear("f.2EA9FAC23CCADF8BC79EC0EFEFF07922.d.862E5B87B4F7BE500C86A6AAAA971615.e.1")
+2024-09-08T20:43:28.750Z INFO webdriver: [POST] http://localhost:9515/session/895d974542f14e0d123f308809d6740c/element/f.2EA9FAC23CCADF8BC79EC0EFEFF07922.d.862E5B87B4F7BE500C86A6AAAA971615.e.1/clear
+2024-09-08T20:43:28.765Z INFO webdriver: RESULT null
+2024-09-08T20:43:28.765Z INFO webdriver: COMMAND elementSendKeys("f.2EA9FAC23CCADF8BC79EC0EFEFF07922.d.862E5B87B4F7BE500C86A6AAAA971615.e.1", "MoroSystems")
+2024-09-08T20:43:28.765Z INFO webdriver: [POST] http://localhost:9515/session/895d974542f14e0d123f308809d6740c/element/f.2EA9FAC23CCADF8BC79EC0EFEFF07922.d.862E5B87B4F7BE500C86A6AAAA971615.e.1/value
+2024-09-08T20:43:28.765Z INFO webdriver: DATA { text: 'MoroSystems' }
+2024-09-08T20:43:28.838Z INFO webdriver: RESULT null
+2024-09-08T20:43:28.838Z INFO webdriver: COMMAND performActions(<object>)
+2024-09-08T20:43:28.839Z INFO webdriver: [POST] http://localhost:9515/session/895d974542f14e0d123f308809d6740c/actions
+2024-09-08T20:43:28.839Z INFO webdriver: DATA {
+  actions: [ { id: 'action1', type: 'key', parameters: {}, actions: [Array] } ]
+}
+2024-09-08T20:43:28.891Z INFO webdriver: COMMAND getWindowHandle()
+2024-09-08T20:43:28.891Z INFO webdriver: [GET] http://localhost:9515/session/895d974542f14e0d123f308809d6740c/window
+2024-09-08T20:43:29.227Z INFO webdriver: COMMAND getWindowHandle()
+2024-09-08T20:43:29.228Z INFO webdriver: [GET] http://localhost:9515/session/895d974542f14e0d123f308809d6740c/window
+2024-09-08T20:43:29.230Z INFO webdriver: COMMAND getWindowHandle()
+2024-09-08T20:43:29.230Z INFO webdriver: [GET] http://localhost:9515/session/895d974542f14e0d123f308809d6740c/window
+2024-09-08T20:43:29.437Z INFO webdriver: COMMAND getWindowHandle()
+2024-09-08T20:43:29.437Z INFO webdriver: [GET] http://localhost:9515/session/895d974542f14e0d123f308809d6740c/window
+2024-09-08T20:43:29.440Z INFO webdriver: COMMAND getWindowHandle()
+2024-09-08T20:43:29.440Z INFO webdriver: [GET] http://localhost:9515/session/895d974542f14e0d123f308809d6740c/window
+2024-09-08T20:43:29.503Z INFO webdriver: RESULT null
+2024-09-08T20:43:29.504Z INFO webdriver: BIDI COMMAND browsingContext.locateNodes {"locator":{"type":"css","value":"a[href^=\"https://www.morosystems.cz\"]"},"context":"2EA9FAC23CCADF8BC79EC0EFEFF07922"}
+2024-09-08T20:43:29.508Z INFO webdriver: RESULT 2EA9FAC23CCADF8BC79EC0EFEFF07922
+2024-09-08T20:43:29.508Z INFO webdriverio:ContextManager: Update current context: 2EA9FAC23CCADF8BC79EC0EFEFF07922
+2024-09-08T20:43:29.508Z INFO webdriver: RESULT 2EA9FAC23CCADF8BC79EC0EFEFF07922
+2024-09-08T20:43:29.508Z INFO webdriver: RESULT 2EA9FAC23CCADF8BC79EC0EFEFF07922
+2024-09-08T20:43:29.508Z INFO webdriver: RESULT 2EA9FAC23CCADF8BC79EC0EFEFF07922
+2024-09-08T20:43:29.509Z INFO webdriver: RESULT 2EA9FAC23CCADF8BC79EC0EFEFF07922
+2024-09-08T20:43:29.513Z INFO webdriver: BIDI COMMAND browsingContext.locateNodes {"locator":{"type":"css","value":"a[href^=\"https://www.morosystems.cz\"]"},"context":"2EA9FAC23CCADF8BC79EC0EFEFF07922"}
+2024-09-08T20:43:29.517Z INFO webdriver: COMMAND elementClick("f.2EA9FAC23CCADF8BC79EC0EFEFF07922.d.B18ED6256B1844C09227E6293E91560F.e.79")
+2024-09-08T20:43:29.517Z INFO webdriver: [POST] http://localhost:9515/session/895d974542f14e0d123f308809d6740c/element/f.2EA9FAC23CCADF8BC79EC0EFEFF07922.d.B18ED6256B1844C09227E6293E91560F.e.79/click
+2024-09-08T20:43:29.547Z INFO webdriver: COMMAND getWindowHandle()
+2024-09-08T20:43:29.547Z INFO webdriver: [GET] http://localhost:9515/session/895d974542f14e0d123f308809d6740c/window
+2024-09-08T20:43:29.873Z INFO webdriver: COMMAND getWindowHandle()
+2024-09-08T20:43:29.873Z INFO webdriver: [GET] http://localhost:9515/session/895d974542f14e0d123f308809d6740c/window
+2024-09-08T20:43:29.979Z INFO webdriver: COMMAND getWindowHandle()
+2024-09-08T20:43:29.979Z INFO webdriver: [GET] http://localhost:9515/session/895d974542f14e0d123f308809d6740c/window
+2024-09-08T20:43:30.000Z INFO webdriver: COMMAND getWindowHandle()
+2024-09-08T20:43:30.000Z INFO webdriver: [GET] http://localhost:9515/session/895d974542f14e0d123f308809d6740c/window
+2024-09-08T20:43:30.370Z INFO webdriver: COMMAND getWindowHandle()
+2024-09-08T20:43:30.370Z INFO webdriver: [GET] http://localhost:9515/session/895d974542f14e0d123f308809d6740c/window
+2024-09-08T20:43:30.510Z INFO webdriver: COMMAND getWindowHandle()
+2024-09-08T20:43:30.510Z INFO webdriver: [GET] http://localhost:9515/session/895d974542f14e0d123f308809d6740c/window
+2024-09-08T20:43:31.841Z INFO webdriver: RESULT null
+2024-09-08T20:43:31.841Z INFO webdriver: BIDI COMMAND browsingContext.locateNodes {"locator":{"type":"css","value":"a[href=\"/o-nas/\"]"},"context":"2EA9FAC23CCADF8BC79EC0EFEFF07922"}
+2024-09-08T20:43:31.841Z INFO webdriver: RESULT 2EA9FAC23CCADF8BC79EC0EFEFF07922
+2024-09-08T20:43:31.841Z INFO webdriverio:ContextManager: Update current context: 2EA9FAC23CCADF8BC79EC0EFEFF07922
+2024-09-08T20:43:31.841Z INFO webdriver: RESULT 2EA9FAC23CCADF8BC79EC0EFEFF07922
+2024-09-08T20:43:31.841Z INFO webdriver: RESULT 2EA9FAC23CCADF8BC79EC0EFEFF07922
+2024-09-08T20:43:31.841Z INFO webdriver: RESULT 2EA9FAC23CCADF8BC79EC0EFEFF07922
+2024-09-08T20:43:31.842Z INFO webdriver: RESULT 2EA9FAC23CCADF8BC79EC0EFEFF07922
+2024-09-08T20:43:31.842Z INFO webdriver: RESULT 2EA9FAC23CCADF8BC79EC0EFEFF07922
+2024-09-08T20:43:31.845Z INFO webdriver: BIDI COMMAND script.callFunction {"functionDeclaration":"<Function[5465 bytes]>","awaitPromise":true,"arguments":[{"sharedId":"f.2EA9FAC23CCADF8BC79EC0EFEFF07922.d.087CF24BFFC8A4B017075A7C4D85BA6C.e.54"}],"target":{"context":"2EA9FAC23CCADF8BC79EC0EFEFF07922"}}
+2024-09-08T20:43:31.848Z INFO webdriver: BIDI COMMAND browsingContext.locateNodes {"locator":{"type":"css","value":"a[href=\"/o-nas/\"]"},"context":"2EA9FAC23CCADF8BC79EC0EFEFF07922"}
+2024-09-08T20:43:31.850Z INFO webdriver: COMMAND performActions(<object>)
+2024-09-08T20:43:31.850Z INFO webdriver: [POST] http://localhost:9515/session/895d974542f14e0d123f308809d6740c/actions
+2024-09-08T20:43:31.850Z INFO webdriver: DATA {
+  actions: [
+    {
+      id: 'action2',
+      type: 'pointer',
+      parameters: [Object],
+      actions: [Array]
+    }
+  ]
+}
+2024-09-08T20:43:31.974Z INFO webdriver: RESULT null
+2024-09-08T20:43:31.974Z INFO webdriver: COMMAND releaseActions()
+2024-09-08T20:43:31.974Z INFO webdriver: [DELETE] http://localhost:9515/session/895d974542f14e0d123f308809d6740c/actions
+2024-09-08T20:43:31.975Z INFO webdriver: RESULT null
+2024-09-08T20:43:31.976Z INFO webdriver: BIDI COMMAND browsingContext.locateNodes {"locator":{"type":"css","value":"a[href=\"/kariera/\"]"},"context":"2EA9FAC23CCADF8BC79EC0EFEFF07922"}
+2024-09-08T20:43:31.978Z INFO webdriver: BIDI COMMAND script.callFunction {"functionDeclaration":"<Function[5465 bytes]>","awaitPromise":true,"arguments":[{"sharedId":"f.2EA9FAC23CCADF8BC79EC0EFEFF07922.d.087CF24BFFC8A4B017075A7C4D85BA6C.e.59"}],"target":{"context":"2EA9FAC23CCADF8BC79EC0EFEFF07922"}}
+2024-09-08T20:43:31.980Z INFO webdriver: BIDI COMMAND browsingContext.locateNodes {"locator":{"type":"css","value":"a[href=\"/kariera/\"]"},"context":"2EA9FAC23CCADF8BC79EC0EFEFF07922"}
+2024-09-08T20:43:31.982Z INFO webdriver: COMMAND elementClick("f.2EA9FAC23CCADF8BC79EC0EFEFF07922.d.087CF24BFFC8A4B017075A7C4D85BA6C.e.59")
+2024-09-08T20:43:31.982Z INFO webdriver: [POST] http://localhost:9515/session/895d974542f14e0d123f308809d6740c/element/f.2EA9FAC23CCADF8BC79EC0EFEFF07922.d.087CF24BFFC8A4B017075A7C4D85BA6C.e.59/click
+2024-09-08T20:43:32.064Z INFO webdriver: COMMAND getWindowHandle()
+2024-09-08T20:43:32.064Z INFO webdriver: [GET] http://localhost:9515/session/895d974542f14e0d123f308809d6740c/window
+2024-09-08T20:43:32.142Z INFO webdriver: COMMAND getWindowHandle()
+2024-09-08T20:43:32.142Z INFO webdriver: [GET] http://localhost:9515/session/895d974542f14e0d123f308809d6740c/window
+2024-09-08T20:43:32.268Z INFO webdriver: COMMAND getWindowHandle()
+2024-09-08T20:43:32.268Z INFO webdriver: [GET] http://localhost:9515/session/895d974542f14e0d123f308809d6740c/window
+2024-09-08T20:43:32.269Z INFO webdriver: COMMAND getWindowHandle()
+2024-09-08T20:43:32.269Z INFO webdriver: [GET] http://localhost:9515/session/895d974542f14e0d123f308809d6740c/window
+2024-09-08T20:43:32.357Z INFO webdriver: COMMAND getWindowHandle()
+2024-09-08T20:43:32.357Z INFO webdriver: [GET] http://localhost:9515/session/895d974542f14e0d123f308809d6740c/window
+2024-09-08T20:43:32.448Z INFO webdriver: COMMAND getWindowHandle()
+2024-09-08T20:43:32.448Z INFO webdriver: [GET] http://localhost:9515/session/895d974542f14e0d123f308809d6740c/window
+2024-09-08T20:43:32.765Z INFO webdriver: RESULT null
+2024-09-08T20:43:32.765Z INFO webdriver: COMMAND getUrl()
+2024-09-08T20:43:32.765Z INFO webdriver: [GET] http://localhost:9515/session/895d974542f14e0d123f308809d6740c/url
+2024-09-08T20:43:32.766Z INFO webdriver: RESULT 2EA9FAC23CCADF8BC79EC0EFEFF07922
+2024-09-08T20:43:32.766Z INFO webdriverio:ContextManager: Update current context: 2EA9FAC23CCADF8BC79EC0EFEFF07922
+2024-09-08T20:43:32.766Z INFO webdriver: RESULT 2EA9FAC23CCADF8BC79EC0EFEFF07922
+2024-09-08T20:43:32.766Z INFO webdriver: RESULT 2EA9FAC23CCADF8BC79EC0EFEFF07922
+2024-09-08T20:43:32.766Z INFO webdriver: RESULT 2EA9FAC23CCADF8BC79EC0EFEFF07922
+2024-09-08T20:43:32.766Z INFO webdriver: RESULT 2EA9FAC23CCADF8BC79EC0EFEFF07922
+2024-09-08T20:43:32.766Z INFO webdriver: RESULT 2EA9FAC23CCADF8BC79EC0EFEFF07922
+2024-09-08T20:43:32.768Z INFO webdriver: RESULT https://www.morosystems.cz/kariera/
+2024-09-08T20:43:32.768Z INFO webdriver: BIDI COMMAND browsingContext.locateNodes {"locator":{"type":"css","value":"#main"},"context":"2EA9FAC23CCADF8BC79EC0EFEFF07922"}
+2024-09-08T20:43:32.770Z INFO webdriver: BIDI COMMAND script.callFunction {"functionDeclaration":"<Function[5465 bytes]>","awaitPromise":true,"arguments":[{"sharedId":"f.2EA9FAC23CCADF8BC79EC0EFEFF07922.d.997A24F40E589AF44DE1D880AFC3AE5C.e.87"}],"target":{"context":"2EA9FAC23CCADF8BC79EC0EFEFF07922"}}
+2024-09-08T20:43:32.774Z INFO webdriver: COMMAND deleteSession()
+2024-09-08T20:43:32.774Z INFO webdriver: [DELETE] http://localhost:9515/session/895d974542f14e0d123f308809d6740c
+2024-09-08T20:43:32.801Z INFO webdriver: RESULT null
